@@ -15,11 +15,11 @@ body {
     /*GOOD*/
     justify-content: center;
     align-items: center;
-    outline: green solid 2px;
+    /* outline: green solid 2px; */
 }
 
 .card {
-    outline: red 2px solid;
+    /* outline: red 2px solid; */
     width: 50em;
     height: 25em;
 }
@@ -81,11 +81,13 @@ body {
     .card {
         width: 20em;
     }
-    .card-one{
+
+    .card-one {
         justify-content: center;
         align-items: center;
         height: fit-content;
     }
+
     .card-one>* {
         padding: 0;
         margin: 45px 0;
@@ -95,10 +97,12 @@ body {
         width: 10em;
         text-align: center;
     }
+
     .card-one p {
         width: 16em;
         text-align: center;
     }
+
     .card-two {
         height: 17em;
     }
@@ -107,7 +111,8 @@ body {
         height: 100%;
         width: 100%;
     }
-    .stats{
+
+    .stats {
         flex-direction: column;
         margin-top: 0;
     }
