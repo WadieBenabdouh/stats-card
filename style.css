@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-body{
+
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,55 +8,108 @@ body{
     background: hsl(233, 47%, 7%);
     font-family: 'Inter', sans-serif;
 }
-.container{
+
+.container {
     display: flex;
-    width: 60em; /*GOOD*/
+    width: 60em;
+    /*GOOD*/
     justify-content: center;
     align-items: center;
     outline: green solid 2px;
 }
-.card{
+
+.card {
     outline: red 2px solid;
     width: 50em;
     height: 25em;
 }
-.image{
+
+.image {
     height: 100%;
     width: 100%;
 }
-.card-one{
+
+.card-one {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: hsl(244, 38%, 16%);
 }
-.card-one > * {
+
+.card-one>* {
     /* padding-inline: 30px; GOOD TO SQUEEZE ELEMENTS THROUGH THE CONTAINER */
     padding: 20px 50px;
 }
-.card-one h2{
+
+.card-one h2 {
     width: 11em;
     text-align: start;
     font-size: 2em;
-    color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
-.card-one p{
+
+.card-one p {
     width: 21em;
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 1.5em;
     margin-top: -2em;
 }
-.stats{
+
+.stats {
     display: flex;
     justify-content: flex-start;
-    gap: 3em;
+    gap: 2em;
     margin-top: 2em;
     color: hsla(0, 0%, 100%, 0.6);
 }
-.stats ul{
+
+.stats ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+
+/* MEDIA QUERY */
+@media (max-width:768px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 20em;
+    }
+
+    .card {
+        width: 20em;
+    }
+    .card-one{
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .card-one>* {
+        padding: 0;
+        margin: 45px 0;
+    }
+
+    .card-one h2 {
+        width: 10em;
+        text-align: center;
+    }
+    .card-one p {
+        width: 16em;
+        text-align: center;
+    }
+    .card-two {
+        height: 17em;
+    }
+
+    .image {
+        height: 100%;
+        width: 100%;
+    }
+    .stats{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
 }
